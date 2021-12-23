@@ -5,7 +5,7 @@ const Services = () => {
         <div>
             <h1>Servicios</h1>
             <h3>Abistamiento de aves</h3>
-            <img src={Pajaritos}/>
+            <img src={Pajaritos} />
         </div>
     )
 }
