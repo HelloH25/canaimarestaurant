@@ -3,7 +3,7 @@ import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
 import menu from '../pictures/menu/menu'
 const Menu = () => {
    const renderMenu = menu.map(({img}) =>(
-    <Card style={{ width: '40%', display:'inline-flex', marginTop:"5px"}}>
+    <Card style={{ width: '18rem', display:'inline-flex', marginTop:"5px", alignItems:"center"}}>
     <Card.Img variant="top" src={img} />
     <Card.Body>
       <Card.Title>Card Title</Card.Title>
@@ -25,7 +25,7 @@ const Menu = () => {
    ))
     return (
         <div>
-            <h1>Menu</h1>
+            <h1>Menú</h1>
             {renderMenu}
         </div>
     )
