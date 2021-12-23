@@ -1,10 +1,12 @@
 import React from 'react'
-import NavigationBar from '../components/NavigationBar'
+import { Button, Card } from 'react-bootstrap'
+import Canaima from '../pictures/Canaima.jpg'
 
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
+            <h1>Bienvenidos a</h1>
+            <img src={Canaima}/>
         </div>
     )
 }

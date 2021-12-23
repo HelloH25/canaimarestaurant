@@ -1,3 +1,17 @@
+.App{
+  background-color: rgb(117, 17, 53);
+  background-position: initial;
+}
+nav{
+  background-color: rgb(117, 17, 53) ;
+}
+a{
+  text-decoration: none ;
+  border: solid;
+  border: 5px;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +50,4 @@
     transform: rotate(360deg);
   }
 }
+

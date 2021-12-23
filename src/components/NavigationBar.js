@@ -7,11 +7,11 @@ const NavigationBar = () => {
         <div>
             <Navbar bg="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand><Link to='/'>Home</Link></Navbar.Brand>
+                    <Navbar.Brand><Link to='/' className=''>Home</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link><Link to='/Menu'>Menu</Link></Nav.Link>
+                            <Nav.Link variant="secondary"><Link to='/Menu'>Menu</Link></Nav.Link>
                             <Nav.Link><Link to='/Servicio'>Servicios</Link></Nav.Link>
                             <Nav.Link><Link to='/Contacto'>Contacto</Link></Nav.Link>
                         </Nav>
