@@ -2,25 +2,21 @@ import React from 'react'
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
 import menu from '../pictures/menu/menu'
 const Menu = () => {
-   const renderMenu = menu.map(({img}) =>(
-    <Card style={{ width: '18rem', display:'inline-flex', marginTop:"5px", alignItems:"center"}}>
+   const renderMenu = menu.map(({img, principal, precio, acompañamiento, bebida}) =>(
+    <Card style={navStyle}>
     <Card.Img variant="top" src={img} />
     <Card.Body>
-      <Card.Title>Card Title</Card.Title>
+      <Card.Title>{principal}</Card.Title>
       <Card.Text>
-        Some quick example text to build on the card title and make up the bulk of
-        the card's content.
+        Acompañamientos: {acompañamiento}
       </Card.Text>
     </Card.Body>
-    <ListGroup className="list-group-flush">
-      <ListGroupItem>Cras justo odio</ListGroupItem>
-      <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-      <ListGroupItem>Vestibulum at eros</ListGroupItem>
+    <ListGroup className="list-group-flush" style={{marginLeft:"5px"}}>
+      <ListGroupItem>Bebida: {bebida}</ListGroupItem>
+      <ListGroupItem>Precio: {precio}</ListGroupItem>
+      
     </ListGroup>
-    <Card.Body>
-      <Card.Link href="#">Card Link</Card.Link>
-      <Card.Link href="#">Another Link</Card.Link>
-    </Card.Body>
+    
   </Card>
    ))
     return (
@@ -29,6 +25,16 @@ const Menu = () => {
             {renderMenu}
         </div>
     )
+}
+
+const navStyle = { 
+  width:"10cm", 
+  high:"10cm", 
+  display:'inline-flex', 
+  margin:"5px", 
+  alignItems:"center", 
+  textAlign:"justify"
+
 }
 
 export default Menu

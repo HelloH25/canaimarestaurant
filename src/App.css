@@ -2,6 +2,9 @@
   background-color: rgb(117, 17, 53);
   background-position: initial;
 }
+h1{
+  color: white;
+}
 nav{
   background-color: rgb(117, 17, 53) ;
 }

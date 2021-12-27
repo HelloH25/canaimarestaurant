@@ -9,7 +9,7 @@ const NavigationBar = () => {
                 <Container>
                     <Navbar.Brand><Link to='/' className=''>Inicio</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Navbar.Collapse id="basic-navbar-nav" style={{backgroundColor:"rgb(117, 17, 53)"}}>
                         <Nav className="me-auto">
                             <Nav.Link variant="secondary"><Link to='/Menu'>Menu</Link></Nav.Link>
                             <Nav.Link><Link to='/Servicio'>Servicios</Link></Nav.Link>
