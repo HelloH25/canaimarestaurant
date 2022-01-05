@@ -8,7 +8,7 @@ export const Map = () => {
         <div style={Style}>
             <GoogleMaps
               apiKey={env.KEY_MAP}
-              style={{height: "400px", width: "70%", positon:"relative", display:"inline-block"}}
+              style={{height: "400px", width: "100%"}}
               zoom={15}
               center={{lat: 4.8520797138768526, lng: -72.89097594547577}}
               markers={{lat: 4.8520797138768526, lng: -72.89097594547577}}

@@ -5,9 +5,9 @@ import { Link, Outlet } from 'react-router-dom'
 const NavigationBar = () => {
     return (
         <div>
-            <Navbar bg="dark" expand="lg">
-                <Container>
-                    <Navbar.Brand><Link to='/' className=''>Inicio</Link></Navbar.Brand>
+            <Navbar style={{backgroundColor:"rgb(117, 17, 53)"}} expand="lg">
+                <Container >
+                    <Navbar.Brand ><Link to='/' className=''>Inicio</Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" style={{backgroundColor:"rgb(117, 17, 53)"}}>
                         <Nav className="me-auto">

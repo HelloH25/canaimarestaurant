@@ -4,7 +4,7 @@ import menu from '../pictures/menu/menu'
 const Menu = () => {
    const renderMenu = menu.map(({img, principal, precio, acompañamiento, bebida}) =>(
     <Card style={navStyle}>
-    <Card.Img variant="top" src={img} />
+    <Card.Img variant="top" src={img} style={{"border-radius":"5px"}}/>
     <Card.Body>
       <Card.Title>{principal}</Card.Title>
       <Card.Text>
@@ -33,7 +33,10 @@ const navStyle = {
   display:'inline-flex', 
   margin:"5px", 
   alignItems:"center", 
-  textAlign:"justify"
+  textAlign:"justify",
+  border:"solid",
+  "border-radius":"5px",
+  "border-color":"rgb(117, 17, 53)"
 
 }
 
