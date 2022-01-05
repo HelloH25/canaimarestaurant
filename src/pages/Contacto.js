@@ -1,10 +1,11 @@
 import React from 'react'
+import Map from '../components/Map'
 
 const Contacto = () => {
     return (
         <div>
             <h1>Contacto</h1>
-            <h2> los numeros de contacto de whatsapp </h2>
+            <Map/>
         </div>
     )
 }
