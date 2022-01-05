@@ -6,7 +6,7 @@ export const Map = () => {
     return (
         <div style={Style}>
             <GoogleMaps
-              apiKey={process.env.REACT_APP_MAP}
+              apiKey={process.env.REACT_APP_KEY_MAP}
               style={{height: "400px", width: "100%"}}
               zoom={15}
               center={{lat: 4.8520797138768526, lng: -72.89097594547577}}
