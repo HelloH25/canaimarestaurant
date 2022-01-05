@@ -1,13 +1,12 @@
 import GoogleMaps from "simple-react-google-maps"
 import React from 'react'
-import env from "react-dotenv"
     
 export const Map = () => {
     
     return (
         <div style={Style}>
             <GoogleMaps
-              apiKey={env.KEY_MAP}
+              apiKey={process.env.REACT_APP_MAP}
               style={{height: "400px", width: "100%"}}
               zoom={15}
               center={{lat: 4.8520797138768526, lng: -72.89097594547577}}
